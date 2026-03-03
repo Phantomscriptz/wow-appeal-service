@@ -80,15 +80,19 @@ footer { text-align:center; padding:40px; color:#777; }
 
 <div class="section">
   <h2>Order Submission Form</h2>
-  <form action="https://formspree.io/f/mnjbkrbl" method="POST">
-    <input type="text" name="account_email" required>>
-    <textarea name="appeal_message" required></textarea>>
-    <input type="text" name="order_id" placeholder="Payment Order ID / Transaction Hash" required>
-    <textarea name="details" placeholder="Describe your situation..." required></textarea>
-    <button type="submit">Submit Details</button>
-    <input type="hidden" name="_redirect" value="https://phantomscriptz.github.io/wow-appeal-service/">
-    <input type="hidden" name="_captcha" value="true">
-  </form>
+<form action="https://formspree.io/f/mnjbkrbl" method="POST">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="account_email" placeholder="Email Address" required>
+  <input type="text" name="order_id" placeholder="Payment Order ID / Transaction Hash" required>
+  <textarea name="appeal_message" placeholder="Short appeal message..." required></textarea>
+  <textarea name="details" placeholder="Describe your situation..." required></textarea>
+  
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_redirect" value="https://phantomscriptz.github.io/wow-appeal-service/thankyou.html">
+  <input type="hidden" name="_captcha" value="true">
+
+  <button type="submit">Submit Details</button>
+</form>
 
   <div class="disclaimer">
     We provide professional writing and digital consulting services only. 
